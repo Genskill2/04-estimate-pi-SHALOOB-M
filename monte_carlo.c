@@ -5,7 +5,6 @@
 
 float mc_pi(int);
 
-
 float frandom() {
   long int q = random();
   float ret = (float)q/(float)RAND_MAX;
@@ -39,7 +38,6 @@ int main(void) {
     }
   }
 }
-
 float mc_pi(int count)
 {
 	float circle=0;
@@ -55,4 +53,3 @@ float mc_pi(int count)
 	}
 	float area =(float) (4*circle)/(count);
 	return area;
-}
