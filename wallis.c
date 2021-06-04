@@ -4,13 +4,6 @@
 #include <math.h>
 
 float wallis_pi(int);
-{ float p=0;
-  for(int i=1;i<=n ;i++)
-  {float e=4*i*i;
-  float k=e/(e-1);
-  p=p+k;
-  }return p*2;
-  }
 
 int main(void) {
   float pi;
@@ -31,3 +24,12 @@ int main(void) {
   }
 }
   
+float wallis_pi(int n)
+  { float p=0;
+  for(int i=1;i<=n ;i++)
+  {float e=4*i*i;
+  float k=e/(e-1);
+  p=p+k;
+  }return p*2;
+  
+}
