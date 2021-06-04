@@ -39,20 +39,20 @@ int main(void) {
     }
   }
 }
-float mc_pi(int n){
-   int c1=0,c2=0;
-    while(n--){
-        float a=frandom();
-        float b=frandom();
-       float  d=sqrt(a*a+b*b);
-        if(d<=1){
-            c1++;
-        }
-        c2++;
 
-
-    }
-    return (float)4*c1/c2;
+float mc_pi(int count)
+{
+	float circle=0;
+	for(int i=0;i<count;i++)
+	{
+		
+		float x = frandom();
+		float y = frandom();
+		if(sqrt(x*x+y*y)<=1)
+		{
+			circle++;
+		}
+	}
+	float area =(float) (4*circle)/(count);
+	return area;
 }
-
-
